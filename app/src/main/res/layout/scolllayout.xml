@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingTop="60dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/response" />
+
+        <TableLayout
+            android:id="@+id/studentrecords_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:visibility="invisible">
+            <TableRow>
+                <TextView
+                    android:padding="3dip"
+                    android:text="Student ID:" />
+                <EditText
+                    android:id="@+id/studentId"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dip" />
+                <TextView
+                    android:padding="3dip"
+                    android:text="Profile Picture"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Gender:"
+                    android:padding="3dip" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/radio_gender">
+                    <RadioButton android:id="@+id/gender_male"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+                    <RadioButton android:id="@+id/gender_female"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+                    <RadioButton android:id="@+id/gender_others"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Others" />
+                </RadioGroup>
+                <ImageView
+                    android:id="@+id/myimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="First Name:"
+                    android:padding="3dip" />
+                <EditText
+                    android:id="@+id/firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Last Name:"
+                    android:padding="3dip" />
+                <EditText
+                    android:id="@+id/lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Course Study:"
+                    android:padding="3dip" />
+                <EditText
+                    android:id="@+id/course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Age:"
+                    android:padding="3dip" />
+                <EditText
+                    android:id="@+id/age"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Address:"
+                    android:padding="3dip" />
+                <EditText
+                    android:id="@+id/address"
+                    android:inputType="textMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="150dip" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/add_studentrecord"
+                    android:text="Add Student"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip" />
+                <Button
+                    android:id="@+id/cancel_studentrecord"
+                    android:text="Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip" />
+                <Button
+                    android:id="@+id/delete_studentrecord"
+                    android:text="Delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/changepicture"
+                    android:text="Change Image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip" />
+                <Button
+                    android:id="@+id/showaddress"
+                    android:text="Show Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip" />
+                <Button
+                    android:id="@+id/showexam"
+                    android:text="Show Exam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/taskrecords_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:visibility="invisible">
+            <TableRow>
+                <TextView
+                    android:padding="3dip"
+                    android:text="To-do Task Name:" />
+                <EditText
+                    android:id="@+id/taskName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Location:"
+                    android:padding="3dip" />
+                <EditText
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Status:"
+                    android:padding="3dip" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/radio_status"
+                    android:checkedButton="@id/status_notcompleted">
+                    <RadioButton android:id="@+id/status_completed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Completed" />
+                    <RadioButton android:id="@+id/status_notcompleted"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Not Completed" />
+                </RadioGroup>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/add_taskrecord"
+                    android:text="Add To-do Task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip" />
+                <Button
+                    android:id="@+id/cancel_taskrecord"
+                    android:text="Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip" />
+                <Button
+                    android:id="@+id/delete_taskrecord"
+                    android:text="Delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dip" />
+            </TableRow>
+        </TableLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableLayout
+                android:id="@+id/examrecords_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:visibility="invisible">
+                <TableRow>
+                    <TextView
+                        android:text="Exam Name:"
+                        android:padding="3dip" />
+                    <EditText
+                        android:id="@+id/examName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minWidth="150dip" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Date and Time:"
+                        android:padding="3dip" />
+                    <TimePicker
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/examTime"
+                        android:timePickerMode="spinner"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text=""
+                        android:padding="3dip" />
+                    <CalendarView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/calendarView"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Location:"
+                        android:padding="3dip" />
+                    <EditText
+                        android:id="@+id/examLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minWidth="150dip" />
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:id="@+id/add_examrecord"
+                        android:text="Add Exam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                    <Button
+                        android:id="@+id/cancel_examrecord"
+                        android:text="Cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dip" />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</ScrollView>
