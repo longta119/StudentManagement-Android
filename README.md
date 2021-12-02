@@ -29,15 +29,21 @@ This project is a WSU Assignment that aims to build a Student Management on an A
 * Assign one or more photo(s) from the camera photo gallery to a selected student record
 * Show a student address included in the record on Google map
 
+![Student](./images/StudentRecord.png)
+
 #### Exams
 * Add a new exam to the list
 * View all the exam records associated with a student
 * Delete multiple exams at the same time
 
+![Exam](./images/Exam.png)
+
 #### To-do tasks
 * Add a new to-do task
 * View all to-do tasks
 * Update a selected to-do task
+
+![Task](./images/Task.png)
 
 
 ## Setup
