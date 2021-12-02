@@ -12,7 +12,7 @@ A simple Student Management on an Adroid App
 ## About the project
 This project is a WSU Assignment that aims to build a Student Management on an Android App. Aeside from the home screen, the App has four main functions allowing users to view and manipulate student records, to-do task, and exams associated with each student.
 
-![Home](./wwwroot/images/Home.jpg)
+![Home](./images/Home.JPG)
 
 
 ## Technologies
@@ -43,7 +43,14 @@ This project is a WSU Assignment that aims to build a Student Management on an A
 ## Setup
 #### Prerequisites
 * Android Studio
-* Google API Key
+* Google API Key: follow to instruction below to obtain your key
+
+![Google API](./images/Google.JPG)
+
+#### Installation
+* Open Android Studio
+* Select File > New > Project from Version Control
+* Enter the link https://github.com/longta119/StudentManagement-AndroidApp in the URL
 
 ## Contributing
 
