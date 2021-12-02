@@ -10,7 +10,7 @@ A simple Student Management on an Adroid App
 5. [Contributing](#contributing)
 
 ## About the project
-This project is a WSU Assignment that aims to build a Student Management on an Android App. Aeside from the home screen, the App has four main functions allowing users to view and manipulate student records, to-do task, and exams associated with each student.
+This project is a WSU Assignment that aims to build a Student Management on an Android App. Aside from the home screen, the App has four main functions allowing users to view and manipulate student records, to-do task, and exams associated with each student.
 
 ![Home](./images/Home.png)
 
