@@ -1,6 +1,6 @@
 # Student Management Android App
 
-A simple Student Management on an Adroid App
+A simple Student Management on an Android App
 
 ## Table of Contents
 1. [About the projects](#about-the-project)
